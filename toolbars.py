@@ -1,10 +1,9 @@
-import sys
 from PyQt6.QtCore import QSize, Qt
 from PyQt6.QtGui import QAction, QIcon
 from PyQt6.QtWidgets import (
     QMainWindow, QApplication,
     QLabel, QToolBar, QStatusBar,
-    QCheckBox, QMenuBar, QVBoxLayout
+    QCheckBox
 )
 
 class MainWindow(QMainWindow):
@@ -58,7 +57,7 @@ class MainWindow(QMainWindow):
         self.vb.addWidget(QLabel("Hi"))
 
 
-app = QApplication(sys.argv)
+app = QApplication([])
 w = MainWindow()
 w.show()
 app.exec()

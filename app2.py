@@ -6,16 +6,15 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("My App")
 
-        #self.button = QPushButton("Press Me!")
-        #self.button.clicked.connect(self.the_button_was_clicked)
+        self.button = QPushButton("Press Me!")
+        self.button.clicked.connect(self.the_button_was_clicked)
 
-        #self.setCentralWidget(self.button)
+        self.setCentralWidget(self.button)
 
     def the_button_was_clicked(self):
         self.button.setText("You already clicked me.")
         self.button.setEnabled(False)
 
-        # Also change the window title.
         self.setWindowTitle("My Oneshot App")
 
 
